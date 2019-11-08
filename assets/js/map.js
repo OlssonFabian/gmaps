@@ -28,7 +28,9 @@ function initMap() {
     var pos = {
         lat: 55.604980,
         lng: 13.003822
+        
     };
+    
     // Instansiera en ny Google Maps com är centrerad på ovanstående kordinater
     var map = new google.maps.Map(
         document.getElementById('map'), {
@@ -39,6 +41,7 @@ function initMap() {
             // disableDefaultUI: true
         }
     );
+
     // Loopa ut butikerna
     stores.forEach(function(element) {
         // Sätt ut en marker för varje butik
