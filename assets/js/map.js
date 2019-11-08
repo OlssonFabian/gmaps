@@ -1,5 +1,6 @@
 // Samling med butikernas lokalisering
-let stores = [
+
+var stores = [
   {
     lat: 55.59988,
     lng: 13.00246
@@ -47,4 +48,9 @@ function initMap() {
       animation: google.maps.Animation.DROP
     });
   });
+}
+
+// Få användarens plats
+function getLocation() {
+  alert("Click!");
 }
