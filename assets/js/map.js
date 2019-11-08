@@ -1,27 +1,26 @@
 // Samling med butikernas lokalisering
 let stores = [
-  {
-    lat: 55.59988,
-    lng: 13.00246
-  },
-  {
-    lat: 55.60662,
-    lng: 13.02031
-  },
-  {
-    lat: 55.60032,
-    lng: 13.0362
-  },
-  {
-    lat: 55.59051,
-    lng: 13.02767
-  },
-  {
-    lat: 55.60428,
-    lng: 12.99793
-  }
+    {
+        lat: 55.599880,
+        lng: 13.002460
+    },
+    {
+        lat: 55.606620,
+        lng: 13.020310
+    },
+    {
+        lat: 55.600320,
+        lng: 13.036200
+    },
+    {
+        lat: 55.590510,
+        lng: 13.027670
+    },
+    {
+        lat: 55.604280,
+        lng: 12.997930
+    },
 ];
-
 // Funktion som kallas av Google för att skapa vår karta
 // Denna function anger vi i en callback parameter i script
 function initMap() {
@@ -46,10 +45,9 @@ function initMap() {
         var marker = new google.maps.Marker(
             {
                 position: element,
-                map: map
+                map: map,
+                animation: google.maps.Animation.DROP
             }
         );
-      animation: google.maps.Animation.DROP
     });
-  });
 }
