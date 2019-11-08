@@ -24,7 +24,7 @@ var stores = [
 // Funktion som kallas av Google för att skapa vår karta
 // Denna function anger vi i en callback parameter i script
 function initMap() {
-<<<<<<< HEAD
+
     // Sätt latitude och longitud i en variabel
     var pos = {
         lat: 55.604980,
@@ -53,7 +53,7 @@ function initMap() {
                 animation: google.maps.Animation.DROP
             }
         );
-=======
+
   // Sätt latitude och longitud i en variabel
   var pos = {
     lat: 55.60498,
@@ -74,12 +74,12 @@ function initMap() {
       position: element,
       map: map,
       animation: google.maps.Animation.DROP
->>>>>>> e1f126a0f8f55c5b261ce4c4b1e2958ea53bd8a1
+
     });
-  });
+  
 }
 
 // Få användarens plats
-function getLocation() {
-  alert("Click!");
+//function getLocation() {
+  //alert("Click!");
 }
